@@ -1,0 +1,158 @@
+<!-- partial:partials/_head.html -->
+<!-- partial -->
+
+<body >
+	<div id="content-container">
+		<!-- partial:partials/_header.html -->
+		<!-- partial -->
+		<div class="page-holder media-page" style="background-image: url(images/mediagallery-bg.jpg);">
+			<div class="promo">
+				<div class="wrapper">
+					<div class="text">
+						<h1>Media Gallery</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate, nunc in condimentum cursus, mauris lectus dictum</p>
+						<a href="" class="button requestconsultation-btn">Request a Consultation</a>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div id="mediagallery">
+					<dl class="filters">
+						<dt>View:</dt>
+						<dd>
+							<ul>
+								<li v-on:click="setActive(key)" v-for="(value, key) in filters" v-bind:class="{ active: key == selectedFilter }">{{ value }}</li>
+							</ul>
+						</dd>
+					</dl>
+					<div class="videos" v-show="selectedFilter == 'videos' || selectedFilter == 'all'">
+						<div class="columns is-variable is-8 is-multiline">
+							<div class="column is-6">
+								<div class="video-holder">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/wdHyifxdOhg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+								</div>
+								<div class="text">
+									<h2>Titan Laser Facial Skin Treatment</h2>
+									<p class="video-read-more"><span>Skin tightening is a minimally invasive, non-surgical process that uses an infrared light source such as a laser or radio wave to tighten skin by heating the collagen under the skins surface. Skin tightening is a minimally invasive, non-surgical process that uses an infrared light source such as a laser or radio wave to tighten skin by heating the collagen under the skins surface.</span></p>
+								</div>
+							</div>
+							<div class="column is-6">
+								<div class="video-holder">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/wdHyifxdOhg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+								</div>
+								<div class="text">
+									<h2>IPL Pulsed Light Skin Treatment</h2>
+									<p class="video-read-more"><span>Skin tightening is a minimally invasive, non-surgical process that uses an infrared light source such as a laser or radio wave to tighten skin by heating the collagen under the skins surface. Skin tightening is a minimally invasive, non-surgical process that uses an infrared light source such as a laser or radio wave to tighten skin by heating the collagen under the skins surface.</span></p>
+								</div>
+							</div>
+							<div class="column is-6">
+								<div class="video-holder">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/wdHyifxdOhg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+								</div>
+								<div class="text">
+									<h2>Titan Laser Facial Skin Treatment</h2>
+									<p class="video-read-more"><span>Skin tightening is a minimally invasive, non-surgical process that uses an infrared light source such as a laser or radio wave to tighten skin by heating the collagen under the skins surface. Skin tightening is a minimally invasive, non-surgical process that uses an infrared light source such as a laser or radio wave to tighten skin by heating the collagen under the skins surface.</span></p>
+								</div>
+							</div>
+							<div class="column is-6">
+								<div class="video-holder">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/wdHyifxdOhg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+								</div>
+								<div class="text">
+									<h2>IPL Pulsed Light Skin Treatment</h2>
+									<p class="video-read-more"><span>Skin tightening is a minimally invasive, non-surgical process that uses an infrared light source such as a laser or radio wave to tighten skin by heating the collagen under the skins surface. Skin tightening is a minimally invasive, non-surgical process that uses an infrared light source such as a laser or radio wave to tighten skin by heating the collagen under the skins surface.</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="beforeafter" v-show="selectedFilter == 'beforeafter' || selectedFilter == 'all'">
+						<div class="columns is-variable is-8 is-multiline">
+							<div class="column is-6">
+								<a href="" class="is-fullwidth"><img src="images/img61.jpg" alt="" width="725" height="255"></a>
+								<div class="text">
+									<h3>AquaGold</h3>
+									<a href=""><i class="fal fa-arrow-right"></i> View Service</a>
+								</div>
+							</div>
+							<div class="column is-6">
+								<a href="" class="is-fullwidth"><img src="images/img61.jpg" alt="" width="725" height="255"></a>
+								<div class="text">
+									<h3>AquaGold</h3>
+									<a href=""><i class="fal fa-arrow-right"></i> View Service</a>
+								</div>
+							</div>
+							<div class="column is-6">
+								<a href="" class="is-fullwidth"><img src="images/img61.jpg" alt="" width="725" height="255"></a>
+								<div class="text">
+									<h3>AquaGold</h3>
+									<a href=""><i class="fal fa-arrow-right"></i> View Service</a>
+								</div>
+							</div>
+							<div class="column is-6">
+								<a href="" class="is-fullwidth"><img src="images/img61.jpg" alt="" width="725" height="255"></a>
+								<div class="text">
+									<h3>AquaGold</h3>
+									<a href=""><i class="fal fa-arrow-right"></i> View Service</a>
+								</div>
+							</div>
+							<div class="column is-6">
+								<a href="" class="is-fullwidth"><img src="images/img61.jpg" alt="" width="725" height="255"></a>
+								<div class="text">
+									<h3>AquaGold</h3>
+									<a href=""><i class="fal fa-arrow-right"></i> View Service</a>
+								</div>
+							</div>
+							<div class="column is-6">
+								<a href="" class="is-fullwidth"><img src="images/img61.jpg" alt="" width="725" height="255"></a>
+								<div class="text">
+									<h3>AquaGold</h3>
+									<a href=""><i class="fal fa-arrow-right"></i> View Service</a>
+								</div>
+							</div>
+							<div class="column is-6">
+								<a href="" class="is-fullwidth"><img src="images/img61.jpg" alt="" width="725" height="255"></a>
+								<div class="text">
+									<h3>AquaGold</h3>
+									<a href=""><i class="fal fa-arrow-right"></i> View Service</a>
+								</div>
+							</div>
+							<div class="column is-6">
+								<a href="" class="is-fullwidth"><img src="images/img61.jpg" alt="" width="725" height="255"></a>
+								<div class="text">
+									<h3>AquaGold</h3>
+									<a href=""><i class="fal fa-arrow-right"></i> View Service</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="photos" v-show="selectedFilter == 'photos' || selectedFilter == 'all'">
+						<div id="photos-grid">
+							<a class="photos-item" href=""><img src="images/none.gif" width="338" height="458" alt=""></a>
+							<a class="photos-item" href=""><img src="images/none.gif" width="338" height="338" alt=""></a>
+							<a class="photos-item" href=""><img src="images/none.gif" width="338" height="538" alt=""></a>
+							<a class="photos-item" href=""><img src="images/none.gif" width="338" height="338" alt=""></a>
+							<a class="photos-item" href=""><img src="images/none.gif" width="338" height="338" alt=""></a>
+							<a class="photos-item" href=""><img src="images/none.gif" width="338" height="408" alt=""></a>
+							<a class="photos-item" href=""><img src="images/none.gif" width="338" height="338" alt=""></a>
+							<a class="photos-item" href=""><img src="images/none.gif" width="338" height="338" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="request-consultation">
+				<h3>Request a Consultation Today</h3>
+				<p>
+					<a href="" class="button requestconsultation-btn">Request a Consultation</a>
+					or Call 480.575.6584
+				</p>
+			</div>
+		</div>
+		<!-- partial:partials/_footer.html -->
+		<!-- partial -->
+	</div>
+	<!-- partial:partials/_sidenav.html -->
+	<!-- partial -->
+	<!-- partial:partials/_requestconsultation.html -->
+	<!-- partial -->
+</body>
+</html>

@@ -1,0 +1,733 @@
+@media screen and (max-width:1250px) {
+  .trust-logos{
+    .column{
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  .monthly-specials{
+    padding-top: 5rem;
+  }
+  .monthly-specials{
+    .columns{
+      flex-direction: column;
+      .is-half{
+        width: 100%;
+      }
+    }
+    .text{
+      .inner{
+        width: 100%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 3rem;
+        padding: 3rem 3rem 11rem;
+      }
+    }
+  }
+  .testimonials{
+    padding: 17rem 0 4rem;
+  }
+  .testimonials-holder{
+    padding-bottom: 5rem;
+  }
+  .blog-section{
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+  }
+  .followus-section{
+    padding-bottom: 7rem;
+  }
+  .blog-section-content{
+    .col,
+    .featured-post,
+	  .featured-item{
+      width: 100%;
+      margin: 0 auto 3rem;
+    }
+    .col{
+      margin-bottom: 0;
+      flex-direction: column;
+      .item{
+        margin: 0 auto 3rem;
+        width: 100%;
+      }
+    }
+  }
+  .home-about-us{
+    .wrapper{
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .image{
+      width: 50%;
+      margin: 0;
+      img{
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+    .text{
+      width: 48%;
+      padding: 0;
+    }
+  }
+  .testimonials .heading,
+  .heading{
+    padding-bottom: 1rem;
+  }
+  .team{
+    .box{
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  #step1{
+    padding-top: 14rem;
+    h1{
+      br{
+        display: none;
+      }
+    }
+    p{
+      max-width: 100%;
+      margin: 0;
+    }
+    .helper{
+      display: none;
+    }
+    .section-holder{
+      flex-direction: column;
+    }
+    .text{
+      margin-bottom: 5rem;
+    }
+    .image{
+      margin: 0 auto;
+    }
+  }
+  #hero-slider{
+    .step{
+      .text{
+        padding: 20rem 0 10rem;
+        width: 100%;
+      }
+      .image{
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width:1000px) {
+  .promo{
+    padding-top: 16rem;
+    padding-bottom: 10rem;
+    .text{
+      margin-right: auto;;
+      text-align: center;
+    }
+    .wrapper{
+      min-height: auto;
+      display: block;
+    }
+    .media-page &,
+    .specials-page &{
+      padding-top: 0;
+    }
+  }
+  .ourservices-section{
+    padding-bottom: 5rem;
+    background: none;
+    h2{
+      font-size: 4rem;
+    }
+    .row{
+      flex-direction: row-reverse;
+      .inner{
+        padding: 2rem 0 2rem 4rem;
+      }
+      &:first-child{
+        top: 0;
+      }
+      &:nth-child(even){
+        .inner{
+          padding: 2rem 0 2rem 4rem;
+        }
+      }
+      margin-top: 5rem;
+    }
+    .is-fullwidth{
+      width: 30%;
+    }
+    .text{
+      width: 70%;
+    }
+  }
+  .category-section{
+    .text{
+      padding: 2.5rem;
+    }
+  }
+  .about-service{
+    padding-bottom: 5rem;
+    .text{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .service-content{
+    background: #fff;
+    margin-bottom: 0;
+    padding-bottom: 3rem;
+    .box{
+      padding-bottom: 2rem;
+    }
+    .text{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .other-services{
+    padding-bottom: 6rem;
+    .text{
+      padding: 0;
+    }
+  }
+  .specials-section{
+    .text{
+      padding-left: 2rem;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  .newpatient-page{
+    padding-bottom: 2rem;
+    .promo{
+      padding-bottom: 2rem;
+      .text{
+        text-align: left;
+        margin-right: 0;
+      }
+      .wrapper{
+        padding-top: 16rem;
+      }
+    }
+  }
+  .blogpost{
+    .promo{
+      padding: 0;
+    }
+  }
+  .contactus-section{
+    .text{
+      padding: 2.5rem;
+    }
+  }
+}
+@media screen and (max-width:768px) {
+  .subscribe-bar{
+    padding: 4rem 0;
+    text-align: center;
+    label{
+      margin: 0 0 2rem;
+      display: block;
+    }
+    .set{
+      max-width: 520px;
+      margin: 0 auto;
+    }
+  }
+  .footer-company-info{
+    text-align: center;
+    padding-bottom: 2rem;
+    .logo{
+      margin: 0 auto 2rem;
+    }
+    .callus{
+      float: none;
+      text-align: center;
+      & + .button{
+        float: none;
+      }
+    }
+  }
+  .footer-nav{
+    text-align: center;
+    h5{
+      margin-top: 2rem;
+    }
+    .column{
+
+    }
+  }
+  #footer{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .btmbar{
+    text-align: center;
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+    p{
+      margin: 0 0 1rem;
+    }
+    dl{
+      margin: 0;
+    }
+  }
+  .testimonials-holder{
+    flex-direction: column;
+    .item{
+      width: 100%;
+      margin: 3rem 0 0;
+      &:first-child{
+        margin: 0;
+      }
+    }
+  }
+  .home-about-us{
+    padding: 5rem 0;
+    .wrapper{
+      display: flex;
+    }
+    .image{
+      display: none;
+    }
+    .text{
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  .followus-section{
+    padding-top: 0;
+  }
+  .ourservices-section{
+    .row{
+      display: block;
+    }
+    .is-fullwidth{
+      display: none;
+    }
+    .inner{
+      padding: 0 !important;
+    }
+    .text{
+      width: 100%;
+      .inner{
+        max-width: 100%;
+      }
+    }
+  }
+  #before-after-container{
+    .img-holder{
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .why-adameve{
+    padding-bottom: 17rem;
+  }
+  .request-consultation{
+    height: 20rem;
+    margin-bottom: 5rem;
+    h3{
+      margin-top: 0;
+      font-size: 2.8rem;
+    }
+  }
+  .aboutus-content{
+    padding-bottom: 4rem;
+  }
+  .team{
+    margin-top: 0;
+    margin-bottom: 5rem;
+    padding-top: 5rem;
+    overflow: hidden;
+    .inner{
+      top: 0;
+    }
+  }
+  .blog-section-content{
+    .post{
+      width: 48%;
+      margin-bottom: 3rem;
+    }
+  }
+  .pagination{
+    padding-bottom: 2rem;
+  }
+  .blog-page{
+    padding-bottom: 1rem;
+    .request-consultation{
+      margin-bottom: 4rem;
+    }
+  }
+  .blogpost{
+    .promo{
+      .text{
+        h1{
+          font-size: 5rem;
+          line-height: 1.1;
+        }
+      }
+    }
+  }
+  .post-content{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    .quote,
+    .img-holder{
+      margin: 0 0 3rem;
+    }
+    .quote{
+      font-size: 2rem;
+      line-height: 1.4;
+      &:after{
+        left: 0;
+      }
+      &:before{
+        right: 0;
+      }
+    }
+    .post-footer{
+      margin: 0;
+      .share-list{
+        line-height: 3.5rem;
+        margin-bottom: 0;
+        li{
+          margin-bottom: 1rem;
+        }
+        a{
+          background: none;
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+        }
+      }
+    }
+  }
+  #requestconsultation{
+    position: fixed;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    .header{
+      padding-bottom: 1rem;
+      p{
+        font-size: 1.6rem;
+      }
+      h3{
+        font-size: 2.8rem;
+      }
+    }
+    .close{
+      right: 1rem;
+      top: 0;
+      color: #000;
+    }
+  }
+  #requestconsultation-container{
+    padding: 1.5rem;
+    overflow: auto;
+    box-sizing: border-box;
+    height: 100%;
+  }
+}
+@media screen and (max-width:720px) {
+  #step1{
+    .text{
+      font-size: 1.8rem;
+      margin-bottom: 2.5rem;
+    }
+    h1{
+      font-size: 5rem;
+      line-height: 1.2;
+    }
+    .image{
+      width: 300px;
+      margin: 0 auto;
+      img{
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .body-area{
+        line-height: 4rem;
+        min-width: 10rem;
+        font-size: 1.4rem;
+        padding: 0;
+        &:hover{
+          padding-top: 0;
+          padding-bottom: 0;
+          margin-top: 0;
+        }
+      }
+      #face-area{
+        left: -2.8rem;
+        top: 5rem;
+      }
+      #hairline-area{
+        right: -2.2rem;
+        top: 1.7rem;
+      }
+      #neck-area{
+        right: -2.2rem;
+        top: 9.9rem;
+      }
+      #body-area{
+        left: -2.8rem;
+        top: 15.3rem;
+      }
+      #hands-area{
+        right: -2.2rem;
+        top: 20.2rem;
+      }
+    }
+  }
+}
+@media screen and (max-width:600px) {
+  .testimonials .heading,
+  .heading{
+    text-align: center;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    h2{
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+    .view-more{
+      margin-left: 0;
+    }
+  }
+  .blog-section-content{
+    .featured-item{
+      .text{
+        position: static;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        padding: 2.5rem;
+      }
+    }
+    img{
+      display: none;
+    }
+    .col{
+      .is-fullwidth{
+        display: none;
+      }
+      .item{
+        flex-direction: column;
+        & > *{
+          width: 100%;
+        }
+      }
+      .text{
+        padding: 2.5rem;
+      }
+    }
+  }
+  h2{
+    font-size: 4rem;
+  }
+  .monthly-specials{
+    .tns-controls{
+      padding: 0 1rem;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+      &:after{
+        left: 50%;
+        top:0;
+      }
+      button{
+        width: 50%;
+      }
+    }
+    .text{
+      .inner{
+        padding-bottom: 8rem;
+      }
+    }
+  }
+  .promo{
+    .text{
+      font-size: 1.8rem;
+      line-height: 3rem;
+      h1{
+        font-size: 5rem;
+      }
+    }
+  }
+  .request-consultation{
+    border-radius: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: auto;
+    .button{
+      display: block;
+      margin: 0 0 1rem;
+    }
+  }
+  .faq{
+    h3{
+      font-size: 3.8rem;
+      margin-bottom: 2rem;
+    }
+  }
+  .service-details{
+    padding-bottom: 2rem;
+  }
+  .service-details{
+    h1{
+      font-size: 5.4rem;
+      margin-bottom: 2rem;
+    }
+  }
+  .other-services{
+    text-align: center;
+  }
+  .columns2-list{
+    columns: auto;
+  }
+  #before-after-container{
+    margin-bottom: 3rem;
+    .column{
+      .title{
+        font-size: 1.8rem;
+      }
+      &:first-child{
+        .title{
+          text-align: left;
+        }
+      }
+      &:last-child{
+        .title{
+          text-align: right;
+        }
+      }
+    }
+  }
+  .why-adameve{
+    h3{
+      font-size: 3.8rem;
+    }
+  }
+  .service-content{
+    h3{
+      font-size: 3.2rem;
+      line-height: 1.1;
+    }
+    h2{
+      margin-bottom: 1.5rem;
+    }
+    p{
+      margin-bottom: 1rem;
+    }
+    .text{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  .specials-section{
+    padding-bottom: 0;
+  }
+  .specials-page + .blog-section{
+    padding-bottom: 3rem;
+  }
+  .blog-page{
+    h1{
+      margin-bottom: 3rem;
+    }
+  }
+  .media-page{
+    padding-bottom: 3rem;
+    .promo{
+      .wrapper{
+        padding-bottom: 5rem;
+      }
+    }
+    .request-consultation{
+      margin-bottom: 0;
+    }
+  }
+  #mediagallery{
+    .photos{
+      padding-bottom: 2rem;
+    }
+  }
+}
+@media screen and (max-width:500px) {
+  #header{
+    .phone{
+      display: none;
+    }
+  }
+  #hero-slider{
+    .step{
+      .text{
+        padding: 14rem 0 10rem;
+      }
+    }
+  }
+  #hero-slider{
+    .step{
+      padding-left: 1rem;
+      padding-right: 1rem;
+      .text{
+        padding-bottom: 7rem;
+      }
+    }
+    .services{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      li{
+        margin: 0 0 1rem;
+        min-width: auto;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        width: 49%;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
+@media screen and (max-width:414px) {
+  #faqs-content{
+    margin-bottom: 4rem;
+  }
+  .other-service{
+    .text{
+      h3{
+        font-size: 3.4rem;
+      }
+    }
+  }
+  .blogpost .promo {
+    .wrapper{
+      min-height: 0;
+    }
+    .text h1{
+      font-size: 3.7rem;
+    }
+  }
+  #sidenav{
+    width: 100%;
+  }
+}
+@media screen and (max-width:370px) {
+  .subscribe-bar{
+    .txt{
+      width: 60%;
+    }
+    .submit{
+      width: 40%;
+    }
+  }
+}

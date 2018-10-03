@@ -1,0 +1,239 @@
+<!-- partial:partials/_head.html -->
+<!-- partial -->
+
+<body>
+	<div id="content-container">
+		<!-- partial:partials/_header.html -->
+		<!-- partial -->
+		<div id="hero">
+			<div class="wrapper">
+				<div id="hero-slider" v-bind:style="{ width: containerWidth + 'px', left: -containerLeftPosition + 'px' }">
+					<section id="step1" v-bind:style="{ width: stepWidth + 'px' }">
+						<div class="section-holder" v-if="currentSlide < 1">
+							<div class="text">
+								<h1>Ready to look<br> as young as you feel?</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis sagittis mattis.</p>
+								<span class="helper">Select an area to begin <i class="far fa-arrow-right"></i></span>
+							</div>
+							<div class="image">
+								<img src="images/bg-step1.jpg" alt="" width="629" height="969">
+								<span v-on:click="nextStep(index)" v-for="(area,index) in bodyAreas" class="body-area" :id="area.id">{{ area.title }}</span>
+							</div>
+						</div>
+					</section>
+					<section class="step" id="step2" v-if="selectedArea" v-bind:style="{ width: stepWidth + 'px' }">
+						<div class="section-holder">
+							<div class="text">
+								<h2>{{ selectedArea.title }}</h2>
+								<p>{{ selectedArea.text }}</p>
+								<ul class="services">
+									<li v-on:click="nextStepService(index)" v-for="(service,index) in selectedArea.services">{{ service.title }}</li>
+								</ul>
+							</div>
+							<div class="image">
+								<img :src="selectedArea.imageUrl" alt="">
+							</div>
+						</div>
+						<span v-on:click="goToPrevStep" class="back"><i class="fal fa-long-arrow-alt-left"></i> Back</span>
+					</section>
+					<section class="step" id="step3" v-if="selectedService" v-bind:style="{ width: stepWidth + 'px' }">
+						<div class="section-holder">
+							<div class="text">
+								<h2>{{ selectedService.title }}</h2>
+								<p>{{ selectedService.text }}</p>
+								<ul class="services">
+									<li v-on:click="nextStepprocedure(index)" v-for="(procedure,index) in selectedService.procedures">{{ procedure.title }}</li>
+								</ul>
+							</div>
+							<div class="image">
+								<img :src="selectedService.imageUrl" alt="">
+							</div>
+						</div>
+						<span v-on:click="goToPrevStep" class="back"><i class="fal fa-long-arrow-alt-left"></i> Back</span>
+					</section>
+					<section class="step" id="step4" v-if="selectedProcedure" v-bind:style="{ width: stepWidth + 'px' }">
+						<div class="section-holder">
+							<div class="text">
+								<h2>{{ selectedProcedure.title }}</h2>
+								<p>{{ selectedProcedure.text }}</p>
+								<div class="buttons">
+									<a class="button" :href="selectedProcedure.learnMoreUrl">Learn more about the procedure</a>
+									<a  v-on:click="openLightbox" class="button" href="">Request a Consultation</a>
+								</div>
+							</div>
+							<div class="image">
+								<img src="images/img-step4.jpg" alt="" width="839" height="1079">
+							</div>
+						</div>
+						<span v-on:click="goToPrevStep" class="back"><i class="fal fa-long-arrow-alt-left"></i> Back</span>
+					</section>
+				</div>
+			</div>
+		</div>
+		<!-- partial:partials/_trust-logos.html -->
+		<!-- partial -->
+		<section class="home-about-us">
+			<div class="wrapper">
+				<div class="image">
+					<img src="images/img1.jpg" alt="" width="650" height="950">
+				</div>
+				<div class="text">
+					<h2>Ready to look <br> as young as you feel?</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius tristique ipsum ut egestas. Aliquam dapibus enim sed ante vulputate tincidunt. Vivamus a bibendum mi, eu pulvinar odio. Aliquam egestas consequat erat. Vivamus interdum orci non molestie tristique. Phasellus sit amet ex odio. Nulla fringilla molestie nisl nec varius.</p>
+					<a href="" class="button button-ligth">Request Consultation</a>
+				</div>
+			</div>
+		</section>
+		<section class="monthly-specials">
+			<div class="wrapper-wider">
+				<div class="heading">
+					<h2>Monthly Specials</h2>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="columns is-gapless">
+					<div class="column is-half is-fullwidth">
+						<img src="images/img2.jpg" alt="" width="750" height="493">
+					</div>
+					<div class="column is-half text">
+						<div class="inner">
+							<div id="specials-slider">
+								<div class="item">
+									<strong class="title">Injectables</strong>
+									<h3>Kybella - Buy One Get 2nd Treatment Free</h3>
+									<p>A first-of-its-kind injectable treatment for adults with submental fullness that destroys fat cells under the chin to improve your profile.</p>
+									<a href="" class="button">Read More</a>
+								</div>
+								<div class="item">
+									<strong class="title">Injectables2</strong>
+									<h3>Kybella - Buy One Get 2nd Treatment Free</h3>
+									<p>A first-of-its-kind injectable treatment for adults with submental fullness that destroys fat cells under the chin to improve your profile.</p>
+									<a href="" class="button">Read More</a>
+								</div>
+								<div class="item">
+									<strong class="title">Injectables3</strong>
+									<h3>Kybella - Buy One Get 2nd Treatment Free</h3>
+									<p>A first-of-its-kind injectable treatment for adults with submental fullness that destroys fat cells under the chin to improve your profile.</p>
+									<a href="" class="button">Read More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="testimonials">
+			<div class="wrapper-wider">
+				<div class="heading">
+					<h2>Testimonials</h2>
+					<a href="" class="view-more">View all blog posts</a>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="testimonials-holder">
+					<div class="item">
+						<div class="inner">
+							<em class="date">May 16, 2018</em>
+							<blockquote>
+								<p>I was delighted with Stephanie, her wonderful technique, gentle, very conceed for my well being.</p>
+								<cite>Patricia W</cite>
+							</blockquote>
+						</div>
+					</div>
+					<div class="item">
+						<div class="inner">
+							<em class="date">April 12, 2018</em>
+							<blockquote>
+								<p>I think eveyone here is great. I&rsquor;ve been coming here for years.</p>
+								<cite>Kelly N</cite>
+							</blockquote>
+						</div>
+					</div>
+					<div class="item">
+						<div class="inner">
+							<em class="date">April 2, 2018</em>
+							<blockquote>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis sagittis mattis. Maecenas ut metus neque. Donec vitae turpis nec orci pretium dictum sed finibus enim. Quisque suscipit nibh sed lobortis faucibus.</p>
+								<cite>Laura N</cite>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+				<dl class="find-us">
+					<dt>Find us on:</dt>
+					<dd>
+						<ul>
+							<li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+							<li><a href=""><i class="fab fa-yelp"></i></a></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+		</section>
+		<section class="blog-section">
+			<div class="wrapper-wider">
+				<div class="heading">
+					<h2>Blog</h2>
+					<a href="" class="view-more">View all blog posts</a>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="blog-section-content">
+					<div class="item is-fullwidth featured-item">
+						<img src="images/img3.jpg" alt="" width="725" height="645">
+						<div class="text">
+							<em class="date">Aug 01, 2018</em>
+							<h3><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis aliquet nulla.</a></h3>
+							<span><a href="" class="view-more">Read Article</a></span>
+						</div>
+					</div>
+					<div class="col">
+						<div class="item">
+							<div class="is-fullwidth">
+								<img src="images/img4.jpg" alt="" width="368" height="368">
+							</div>
+							<div class="text">
+								<em class="date">Aug 01, 2018</em>
+								<h3><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h3>
+								<span><a href="" class="view-more">Read Article</a></span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="text">
+								<em class="date">Aug 01, 2018</em>
+								<h3><a href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h3>
+								<span><a href="" class="view-more">Read Article</a></span>
+							</div>
+							<div class="is-fullwidth">
+								<img src="images/img5.jpg" alt="" width="368" height="368">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="followus-section">
+			<div class="wrapper-wider">
+				<div class="heading">
+					<h2>Follow us:</h2>
+					<a href="" class="view-more"><i class="fab fa-instagram"></i> Instagram Feed</a>
+				</div>
+			</div>
+			<div class="wrapper">
+				<ul class="columns is-multiline is-8 is-mobile is-multiline">
+					<li class="column is-3-desktop is-half-mobile"><a class="is-fullwidth" href=""><img src="images/img6.jpg " alt="" width="320" height="320"></a></li>
+					<li class="column is-3-desktop is-half-mobile"><a class="is-fullwidth" href=""><img src="images/img7.jpg " alt="" width="320" height="320"></a></li>
+					<li class="column is-3-desktop is-half-mobile"><a class="is-fullwidth" href=""><img src="images/img8.jpg " alt="" width="320" height="320"></a></li>
+					<li class="column is-3-desktop is-half-mobile"><a class="is-fullwidth" href=""><img src="images/img9.jpg " alt="" width="320" height="320"></a></li>
+				</ul>
+			</div>
+		</section>
+		<!-- partial:partials/_footer.html -->
+		<!-- partial -->
+	</div>
+	<!-- partial:partials/_sidenav.html -->
+	<!-- partial -->
+	<!-- partial:partials/_requestconsultation.html -->
+	<!-- partial -->
+</body>
+</html>
