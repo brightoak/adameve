@@ -49,21 +49,25 @@ document.addEventListener("DOMContentLoaded", function () {
   //requestConsultation
   var requestConsultationBtns = document.querySelectorAll('.requestconsultation-btn');
   if (requestConsultationBtns.length > 1) {
-    requestConsultationBtns.forEach(function (el) {
-      el.onclick = function (e) {
-        e.preventDefault();
-        var container = document.getElementById('requestconsultation');
-        if (container) {
-          container.classList.add('js-visible');
+      var fader = document.getElementById('fader');
+      requestConsultationBtns.forEach(function (el) {
+          el.onclick = function (e) {
+              e.preventDefault();
+              var container = document.getElementById('requestconsultation');
+              if (container) {
+                  container.classList.add('js-visible');
 
-          var closeContainer = container.querySelector('.close');
-          closeContainer.onclick = function () {
-            container.classList.remove('js-visible');
-            container.classList.remove('js-valid');
+                  var closeContainer = container.querySelector('.close');
+                  closeContainer.onclick = function () {
+                    container.classList.remove('js-visible');
+                    container.classList.remove('js-valid');
+                  };
+                  fader.onclick = function () {
+                    container.classList.remove('js-visible');
+                  };
+              }
           };
-        }
-      };
-    });
+      });
   }
   var videoReadMore = document.querySelectorAll('.video-read-more');
   if (videoReadMore.length > 1) {
